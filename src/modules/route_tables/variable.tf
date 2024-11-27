@@ -1,9 +1,9 @@
 variable "vpc_id" {
-    type = string
+    description ="ID of the VPC"
 }
 
 variable "subnet_ids" {
-   # type = string
+   description = "ID of the subnet"
 }
 
 variable "routes" {
@@ -13,4 +13,6 @@ variable "routes" {
     }))
 }
 
-variable "tags" {}
+variable "tags" {
+    description = "Route Table"
+}
