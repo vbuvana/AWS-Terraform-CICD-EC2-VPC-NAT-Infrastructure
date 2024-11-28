@@ -100,7 +100,7 @@ jobs:
           echo "public_key_name=$PUBLIC_KEY_NAME.pem" >> $GITHUB_ENV
 
 
-      # Step 6: Update terraform.tfvars
+      # Step 6: Update terraform.tfvars file
       - name: Update terraform.tfvars
         run: |
           BUCKET_NAME=$(aws ssm get-parameter --name /my-terraform/s3-bucket-name --query 'Parameter.Value' --output text)
