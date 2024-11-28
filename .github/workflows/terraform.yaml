@@ -181,7 +181,7 @@ jobs:
       # Step 12: Terraform Destroy
         #working-directory: src
         #if: github.event_name == 'push'
-        #run: terraform destroy --auto-approve
+        #run: terraform destroy --auto-approv
 
 
        # Step 13: Empty and Delete S3 Bucket
