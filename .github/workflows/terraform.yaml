@@ -220,5 +220,5 @@ jobs:
 
            # Delete public key pair
           echo "Deleting key pair: $PUBLIC_KEY_NAME..."
-          aws ec2 delete-key-pair --key-name $PUBLIC_KEY_NAME */
+          aws ec2 delete-key-pair --key-name $PUBLIC_KEY_NAME
 
